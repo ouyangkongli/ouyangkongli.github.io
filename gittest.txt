@@ -3,3 +3,4 @@ gittest: made in dev
 Creating a new branch is quick.:made in dev
 Creating a new branch is quick and simple.:made in master
 Creating a new branch is quick and simple.:made in feature1
+add readme.txt
