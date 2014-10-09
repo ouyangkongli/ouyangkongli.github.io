@@ -6,4 +6,7 @@
 
 * Github: [https://github.com/oukongli](https://github.com/oukongli)
 
+* Facebook: [https://www.facebook.com/ouyangkongli](https://www.facebook.com/ouyangkongli)
+
 * Weibo: [http://weibo.com/u/3225252100](http://weibo.com/u/3225252100)
+
