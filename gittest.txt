@@ -2,7 +2,12 @@ gittest
 gittest: made in dev
 Creating a new branch is quick.:made in dev
 Creating a new branch is quick and simple.:made in master
+Creatijng a new branch is quick and simple.:made in feature1
+add readme.txt
 Creating a new branch is quick and simple.:made in feature1
 add readme.txt
-create bug branch1234556677
 git push
+ 
+create bug branch
+
+>>>>>>> master
