@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "cygwin安装jekyll"
-tags: [cygwin,jekyll]
+tags: [cygwin, jekyll]
 category: [Technique]
 ---
 
