@@ -2,7 +2,7 @@
 layout: post
 title: "cygwin安装jekyll"
 tags: [cygwin, jekyll]
-category: [Technique]
+category: [technique]
 ---
 
 ## 卸载已安装的ruby
