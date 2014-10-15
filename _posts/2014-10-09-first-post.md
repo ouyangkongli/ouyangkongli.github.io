@@ -5,4 +5,4 @@ description: "first post"
 category: 'test'
 tags: ['hello','jekyll']
 ---
-{% include JB/setup %}
+first github blog test. 

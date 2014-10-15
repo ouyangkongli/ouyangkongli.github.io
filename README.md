@@ -1,6 +1,6 @@
 ## ou_kongli的个人博客
 
-基于jekyll的个人博客站点[http://oukongli.github.io/](http://oukongli.github.io/)
+基于jekyll的个人博客[http://oukongli.github.io/](http://oukongli.github.io/)
 
 ## About me
 
