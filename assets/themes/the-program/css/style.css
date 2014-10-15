@@ -401,7 +401,6 @@ Calculation should be done via  http://j.mp/rNg5uA
 No styleguide reference.
 */
 body {
-  font-family: consolas, monaco, monospace;
   font-size: 1em;
   line-height: 1.625em;
 }
@@ -412,14 +411,6 @@ http://modularscale.com/scale/?px1=16&px2=30&ra1=1.618&ra2=0
 
 No styleguide reference.
 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: UbuntuMono-B, consolas, monaco, monospace;
-}
 h1,
 .h1 {
   font-size: 30px;
@@ -504,16 +495,6 @@ No styleguide reference.
 /* COMFORTAA Font
  * http://www.fontsquirrel.com/fonts/Comfortaa
 */
-@font-face {
-  font-family: 'UbuntuMono-B';
-  src: url('/assets/themes/the-program/font/UbuntuMono-B-webfont.eot');
-  src: url('/assets/themes/the-program/font/UbuntuMono-B-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/themes/the-program/font/UbuntuMono-B-webfont.woff') format('woff'), url('/assets/themes/the-program/font/UbuntuMono-B-webfont.ttf') format('truetype'), url('/assets/themes/the-program/font/UbuntuMono-B-webfont.svg#UbuntuMono-B') format('svg');
-  font-weight: normal !important;
-  font-style: normal;
-}
-/*
-LESS helper
-*/
 /*
 List modules
 .list-linear  - list line up horizontally
@@ -590,14 +571,10 @@ pre {
 /* HEADER
 --------------------------------------------------------------------------------- */
 .the-header .logo {
-  font-family: UbuntuMono-B, consolas, monaco, monospace;
   margin: 0;
 }
 .the-header .logo a:visited {
   color: #2d2d2d;
-}
-.the-header .nav-global {
-  text-transform: uppercase;
 }
 .the-header .nav-global .logo {
   text-transform: none;
@@ -609,7 +586,7 @@ pre {
 /* MAIN
 --------------------------------------------------------------------------------- */
 .unit-article header {
-  border-bottom: 5px solid rgba(21, 25, 25, 0.8);
+  border-bottom: 3px solid rgba(21, 25, 25, 0.8);
   margin-bottom: 21px;
 }
 .unit-article header h1 {
@@ -778,7 +755,7 @@ pre {
   border-bottom: 0;
 }
 .unit-article .unit-foot {
-  border-top: 5px solid rgba(21, 25, 25, 0.8);
+  border-top: 3px solid rgba(21, 25, 25, 0.8);
   padding-top: 1.625em;
   position: relative;
 }
@@ -1055,7 +1032,7 @@ pre {
   .the-header .unit-head .nav-global .logo a {
     display: block;
     font-size: 30px;
-    line-height: 52px;
+    line-height: 40px;
     margin-bottom: 26px;
     padding-left: 5px;
     position: relative;
@@ -1089,7 +1066,7 @@ pre {
   }
   .the-footer h4 {
     font-size: 30px;
-    line-height: 52px;
+    line-height: 40px;
     margin-top: 0;
     margin-bottom: 26px;
   }
