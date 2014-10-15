@@ -11,7 +11,7 @@ Markdown的语法非常简单，你可以直接在***[点击这里下载Markdown
 或者直接点击***[Markdown快速入门](http://wowubuntu.com/markdown/basic.html "markdown轻松入门")***,30分钟轻松入门.
 
 ##**Jekyll**
-废话不多说，直接从官方中文文档学习***[http://jekyllcn.com/docs/home/][]***.
+废话不多说，直接从官方中文文档学习***[http://jekyllcn.com/docs/home/][1]***.
 
 
 
@@ -23,4 +23,4 @@ Markdown的语法非常简单，你可以直接在***[点击这里下载Markdown
 
 
 
-[http://jekyllcn.com/docs/home/]: http://jekyllcn.com/docs/home/ "进入jekyll官方网站学习"
+[1]: http://jekyllcn.com/docs/home/ "进入jekyll官方网站学习"
