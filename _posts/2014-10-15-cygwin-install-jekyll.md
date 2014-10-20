@@ -13,6 +13,7 @@ category: [technique]
 [安装指南](https://rvm.io/rvm/install/)
 
     :::bash
+	echo ipv4 >> ~/.curlrc
     curl -L https://get.rvm.io | bash -s stable --ruby
 
 检测rvm安装
