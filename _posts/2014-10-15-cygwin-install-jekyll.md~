@@ -62,12 +62,10 @@ category: [technique]
   
   查看安装的版本号和路径
 
-{% highlight ruby %}
-ruby -v
-gem -v
-which ruby
-which gem
-{% endhighlight %}
+    ruby -v
+    gem -v
+    which ruby
+    which gem
 
 ### 安装jekyll
 用gem安装：
