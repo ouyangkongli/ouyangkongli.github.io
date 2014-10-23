@@ -62,25 +62,31 @@ category: [technique]
   
   查看安装的版本号和路径
 
-    ruby -v
-    gem -v
-    which ruby
-    which gem
+{% highlight ruby %}
+ruby -v
+gem -v
+which ruby
+which gem
+{% endhighlight %}
 
 ### 安装jekyll
 用gem安装：
 
-    gem update --system
-    gem list
-    gem install jekyll
+{% highlight ruby %}
+gem update --system
+gem list
+gem install jekyll
+{% endhighlight %}
 
 如果出现`spawn.h`的错误，这是由于`posix-spawn`的bug引起的，需要自己编译安装：
-	
-    gem install rake-compiler -v 0.7.6
-    git clone git://github.com/rtomayko/posix-spawn.git
-    cd posix-spawn
-    rake gem
-    gem install pkg/posix-spawn-0.3.6
+
+{% highlight ruby %}
+gem install rake-compiler -v 0.7.6
+git clone git://github.com/rtomayko/posix-spawn.git
+cd posix-spawn
+rake gem
+gem install pkg/posix-spawn-0.3.6
+{% endhighlight %}
 
 再`gem install jekyll`就没问题啦。
 
