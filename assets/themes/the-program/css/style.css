@@ -345,6 +345,10 @@ No styleguide reference.
   *overflow: visible;
   zoom: 1;
 }
+.center  img {
+  text-align: center;
+  margin: 0 auto;
+}
 /*
 .media module from http://j.mp/tQCTa8
 Since .media uses overflow: hidden, box-shadow needs padding to render correctly.
