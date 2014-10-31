@@ -6,7 +6,10 @@ paginate_path: page/:num
 
 blog:
     name: ou_kongli                                                # 博客名称
-    description: 十步杀一人，千里不留行；事了拂衣去，深藏身与名；   # 博客描述
+    description1: 十步杀一人   # 博客描述1
+    description2: 千里不留行   # 博客描述2
+    description3: 事了拂衣去   # 博客描述3
+    description4: 深藏身与名   # 博客描述4
     title:  ou_kongli                                             # 网页标题
     url:   oukongli.github.io                                              # 博客地址
     duoshuo:                                             # 多说ID
