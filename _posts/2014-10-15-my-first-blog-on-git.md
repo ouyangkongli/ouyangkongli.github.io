@@ -17,11 +17,7 @@ Markdown的语法非常简单，
   简要步骤：  
 1. 首先安装jekyll，这里我是在cygwin下使用的，见另外一篇**[blog]({% post_url 2014-10-15-cygwin-install-jekyll %})**    
 2. 安装完成之后，废话不多说，直接从官方中文文档学习**[http://jekyllcn.com/docs/home/][1]**.
-
-
-
-
-  
+<!-- more -->
   
   
   

@@ -29,7 +29,7 @@ tags: [cocos2d-x, CCNode]
 ---
   
 一些子类化的节点提供了更为丰富的特性和功能。  
-
+<!-- more -->
 ###2.属性
  Features of CCNode:
 {% highlight cpp %}

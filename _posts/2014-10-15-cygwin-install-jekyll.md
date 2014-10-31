@@ -37,6 +37,7 @@ category: [technique]
 
 ### 管理ruby环境
 下面这几步其实不必要了，只是展示一下安装的过程，你也可以安装其它的ruby版本。
+<!-- more -->
 
     rvm list known
     rvm install 1.9.3
