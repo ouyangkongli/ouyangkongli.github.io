@@ -86,6 +86,14 @@ a.navbar-brand {
     width: 100%;
 }
 
+.navbar-header {
+	position:fixed;
+	z-index: 9999;
+	top:0;
+	background:#B7B7B7;
+	opacity:0.8;
+}
+
 #nav-wrap .navbar-header {
     width: 100%;
 }
@@ -95,6 +103,10 @@ a.navbar-brand {
   height:auto;
 }
 
+.row {
+	margin-top:50px;
+	margin-bottom:50px;
+}
 
 /* 覆盖导航条激活菜单的背景色设置 */
 #nav-menu a, #nav-menu a:hover, #nav-menu a:focus {
