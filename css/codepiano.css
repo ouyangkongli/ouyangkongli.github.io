@@ -244,6 +244,11 @@ table#post-data .fa-calendar, table#post-data .fa-bookmark, table#post-data .fa-
   color: #1077BC;
 }
 
+table th {
+font-weight: bold;
+text-align: center;
+}
+
 table#post-data a:hover {
   color: #FF6699;
 }

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 title: 关于我
 ---
 
@@ -17,9 +17,6 @@ title: 关于我
 * Facebook: [https://www.facebook.com/ouyangkongli](https://www.facebook.com/ouyangkongli)  
 
 * Weibo: [http://weibo.com/u/3225252100](http://weibo.com/u/3225252100)  
-  
-  
-  
   
 ----
 
