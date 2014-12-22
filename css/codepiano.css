@@ -96,6 +96,7 @@ a.navbar-brand {
 
 #nav-wrap .navbar-header {
     width: 100%;
+	border-bottom: solid 2px #06aeee;
 }
 
 .navbar ul.nav {
