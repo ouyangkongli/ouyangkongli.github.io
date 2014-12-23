@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6{
 	background: #fbfbfb;
 }
 .typo table thead th, .typo-table thead th {
-	background: #f1f1f1;
+	background: #a1a1a1;
 }
 
 /* 去除 webkit 中 input 和 textarea 的默认样式  */
