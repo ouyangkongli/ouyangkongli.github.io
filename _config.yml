@@ -3,12 +3,11 @@ permalink: /:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 highlighter: pygments
-# 分页配置，每页最多显示几篇文章
 paginate: 5
 
 # 修改为自己的配置
-title : ou_kongli
-tagline: 十步杀一人 千里不留行 事了拂衣去 深藏身与名
+title : 十步杀一人 千里不留行 事了拂衣去 深藏身与名
+tagline:
 author :
   name : ou_kongli
   email : oukongli(at)gmail.com
@@ -83,9 +82,9 @@ codepiano :
   comments :
     provider : duoshuo
     disqus :
-      short_name : codepiano
+      short_name :
     duoshuo :
-      short_name : codepiano
+      short_name : oukongli
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
