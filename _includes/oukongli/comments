@@ -1,0 +1,12 @@
+{% if site.oukongli.comments.provider and page.comments != false %}
+
+{% case site.oukongli.comments.provider %}
+{% when "disqus" %}
+  {% include oukongli/comments-providers/disqus %}
+{% when "duoshuo" %}
+  {% include oukongli/comments-providers/duoshuo %}
+{% when "custom" %}
+  {% include custom/comments %}
+{% endcase %}
+
+{% endif %}

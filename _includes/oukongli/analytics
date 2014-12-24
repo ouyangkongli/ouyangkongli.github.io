@@ -1,0 +1,14 @@
+{% if site.safe and site.oukongli.analytics.provider and page.oukongli.analytics != false %}
+
+{% case site.oukongli.analytics.provider %}
+{% when "google" %}
+  {% include oukongli/analytics-providers/google %}
+{% when "getclicky" %}
+  {% include oukongli/analytics-providers/getclicky %}
+{% when "mixpanel" %}
+  {% include oukongli/analytics-providers/mixpanel %}
+{% when "custom" %}
+  {% include custom/analytics %}
+{% endcase %}
+
+{% endif %}

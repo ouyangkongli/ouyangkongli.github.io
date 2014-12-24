@@ -1,0 +1,8 @@
+{% if site.safe and site.oukongli.sharing.provider and page.oukongli.sharing != false %}
+
+{% case site.oukongli.sharing.provider %}
+{% when "custom" %}
+  {% include custom/sharing %}
+{% endcase %}
+
+{% endif %}
