@@ -1,7 +1,7 @@
 ---
 layout: post
 title: java的System.getProperty()方法
-category: javaweb
+category: [java,javaweb]
 tags: [javaweb, 学习笔记]
 date: 2014-11-28
 ---
