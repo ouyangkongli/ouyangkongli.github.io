@@ -55,6 +55,8 @@ show databases;
    drop table 表名;
 6、 清空表中记录：
    delete from 表名;
+   truncate 表名;（效率更高）
 7、 显示表中的记录：
   select * from 表名;
 {% endhighlight %}
+
