@@ -60,3 +60,27 @@ show databases;
   select * from 表名;
 {% endhighlight %}
 
+###常用查询
+{% highlight cpp %}
+like 表示模糊查询
+   select * from table where column like 'x%';
+in 表示某个值在某个数组内
+   select * from table where column in (2,1);
+between 表示可以查询某个范围内的数据;
+   select * from table where column between '1989-08-21' and '1990-10-10';
+查询空值
+   select * from table where column is null;
+排序
+   select * from table order by column;
+常用函数
+   max()   min()  count()
+分组
+   select * from table group by column1, column2;
+having
+   select cla_id,count(id) as pn from t_stu whereid is not null group by cla_id having pn>50;
+跨表查询
+   select * from t_cla t1, t_stu t2 where t1.id=t2.cla_id;
+   或者
+   select * from t_cla t1 join t_stu t2 on (t1.id = t2.cla_id);(常用)
+{% endhighlight %}
+
