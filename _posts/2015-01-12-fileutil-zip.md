@@ -81,8 +81,6 @@ having
 跨表查询
    select * from t_cla t1, t_stu t2 where t1.id=t2.cla_id;
    或者
-   select * from t_cla t1 join t_stu t2 on (t1.id = t2.cla_id);(常用)  
-分页查询
-   selecat * from table limit a,b;  
+   select * from t_cla t1 join t_stu t2 on (t1.id = t2.cla_id);(常用)
 {% endhighlight %}
 
