@@ -1,6 +1,6 @@
 ---
 layout: post
-keywords: exception
+keywords: mysql
 description:
 title: "mysql 常用命令"
 categories: [mysql]

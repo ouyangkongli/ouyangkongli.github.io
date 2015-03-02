@@ -1,6 +1,6 @@
 ---
 layout: post
-keywords: exception
+keywords: anonymous-inner-class
 description:
 title: "java匿名内部类"
 categories: [java]
