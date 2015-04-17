@@ -16,7 +16,7 @@ icon: file-alt
 
 代码如下：  
 `TestZIP.java`
-{% highlight java linenos %}
+{% highlight java linenos=table %}
 public class TestZIP {
     public static void main(String[] args) {
         FileUtil.createZipArchive("./src/resources/testSrc");
@@ -25,7 +25,7 @@ public class TestZIP {
 {% endhighlight %}
 <!-- more -->
 `FileUtil.java`
-{% highlight java %}
+{% highlight java linenos=table %}
 public class FileUtil {
     final static int BUFFER = 2048;
     private static Logger log = Logger.getLogger(String.valueOf(FileUtil.class));
