@@ -2,7 +2,7 @@
 layout: post
 title: "Spring依赖注入之注解注入"
 description: Spring依赖注入的三种方式之一：通过注解实现注入
-tags: Spring, DI
+tags: Spring, Dependency Injection
 comments: true
 categories: Spring
 ---
