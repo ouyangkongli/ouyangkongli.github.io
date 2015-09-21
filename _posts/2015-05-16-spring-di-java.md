@@ -20,28 +20,26 @@ categories: Spring
 ## 2. 定义dao类和service类
 
 dao类是service类的一个属性，是需要注入的对象。
+{% highlight java %}
+public class VideoService {
+    SaveVideoInfoDao saveVideoInfoDao;
+    public VideoService() {
+    }
 
-	public class VideoService {
-		SaveVideoInfoDao saveVideoInfoDao;
+    public VideoService(SaveVideoInfoDao saveVideoInfoDao) {
+        this.saveVideoInfoDao = saveVideoInfoDao;
+    }
+    public void saveVideoInfo(String info) {
+        saveVideoInfoDao.printMesg(info);
+    }
+}
 
-		public VideoService(){}
-
-		public VideoService(SaveVideoInfoDao saveVideoInfoDao) {
-			this.saveVideoInfoDao = saveVideoInfoDao;
-		}
-
-		public void saveVideoInfo(String info) {
-			saveVideoInfoDao.printMesg(info);
-		}
-	}
-
-	public class SaveVideoInfoDao {
-
-		public void printMesg(String message) {
-			System.out.println("saving video info....");
-		}
-	}
-
+public class SaveVideoInfoDao {
+    public void printMesg(String message) {
+    	System.out.println("saving video info....");
+    }
+}
+{% endhighlight %}
 > dao类和service类就是两个很普通的java类，没有任何注解依附。
 
 <!-- more -->
