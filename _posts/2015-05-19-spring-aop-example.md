@@ -40,6 +40,7 @@ categories: Spring
 
 1.1 将日志类作为切面，定义为bean即可：
 
+{% highlight java %}
 	@Service("logService")
 	public class LogService {
 		private Logger logger = LoggerFactory.getLogger(LogService.class);
@@ -56,6 +57,8 @@ categories: Spring
 			logger.info("after service is called....");
 		}
 	}
+ {% endhighlight %}
+
 
 > 首先，通过@Service注解将类定义为bean；方法printLog的参数`ProceedingJoinPoint`对象属于`AspectJ`，通过这个对象可以获取被通知的对象和方法的信息，并通过`proceed`方法执行被通知的对象。
 
@@ -74,7 +77,8 @@ categories: Spring
 
 通过注解，可以直接在类上定义切面、通知和切点，无需任何xml配置。
 
-	@Service("logService")
+{% highlight java %}
+    @Service("logService")
 	@Aspect
 	public class LogService {
 		private Logger logger = LoggerFactory.getLogger(LogService.class);
@@ -94,6 +98,7 @@ categories: Spring
 			logger.info("after service is called....");
 		}
 	}
+{% endhighlight %}	
 
 > `@Aspect`注解表示将该类定义为切面，`@Pointcut`定义切点，execution表达式与xml配置一样；切点的id即为空方法的方法名（这里的方法内容不重要，主要是供切点依附），这里即为saveVideo；`@Around`表示定义环绕通知，需要引用切点。
 
