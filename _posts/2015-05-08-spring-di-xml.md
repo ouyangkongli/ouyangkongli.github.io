@@ -2,7 +2,7 @@
 layout: post
 title: "Spring依赖注入之XML配置"
 description: Spring依赖注入的方式之一：通过XML配置文件实现
-tags: Spring, DI
+tags: [Spring, DI]
 comments: true
 categories: Spring
 group: archive

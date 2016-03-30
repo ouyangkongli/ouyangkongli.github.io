@@ -2,7 +2,7 @@
 layout: post
 title: Spring AOP demo
 description: 介绍Spring面向切面编程（AOP）的入门实例，分别通过xml配置和注解实现。
-tag: Spring, aop
+tag: [Spring, aop]
 comments: true
 categories: Spring
 ---
