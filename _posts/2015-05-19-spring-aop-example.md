@@ -36,6 +36,9 @@ categories: Spring
 		<version>${spring.version}</version>
 	</dependency>
 
+
+<!-- more -->
+
 ## 1. 通过XML配置实现
 
 1.1 将日志类作为切面，定义为bean即可：
