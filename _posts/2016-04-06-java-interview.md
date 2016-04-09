@@ -8,7 +8,8 @@ categories: Java
 ---
 
 ## 1. Jdk和Jre
-今天，文思海辉项目组面试的一道题目，惭愧ing，java开发近2年，对于这2个单词，最熟悉不过，也知道其中的含义，但是如何二者的区别和联系是什么？  
+今天面试的一道题目，惭愧ing，java开发近2年，对于这2个单词，最熟悉不过，也知道其中的含义，但是如何二者的区别和联系是什么？  
+
 > JDK： Java Development Kit  
 > JRE:  Java Runtime Environment   
 
