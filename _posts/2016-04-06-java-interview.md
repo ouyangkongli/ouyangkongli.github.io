@@ -22,3 +22,17 @@ JDK是java开发工具包，是程序员使用java语言编写java程序所需�
 + [如何理解HTTP协议的 “无连接，无状态” 特点？](http://blog.csdn.net/tennysonsky/article/details/44562435)
 
 <!-- more -->
+
+## 3. Jsp 内置对象  
+
+request表示HttpServletRequest对象。它包含了有关浏览器请求的信息，并且提供了几个用于获取cookie, header, 和session数据的有用的方法。   
+response表示HttpServletResponse对象，并提供了几个用于设置送回 浏览器的响应的方法（如cookies,头信息等）   
+out对象是javax.jsp.JspWriter的一个实例，并提供了几个方法使你能用于向浏览器回送输出结果。    
+pageContext表示一个javax.servlet.jsp.PageContext对象。它是用于方便存取各种范围的名字空间、servlet相关的对象的API，并且包装了通用的servlet相关功能的方法。   
+session表示一个请求的javax.servlet.http.HttpSession对象。Session可以存贮用户的状态信息   
+applicaton 表示一个javax.servle.ServletContext对象。这有助于查找有关servlet引擎和servlet环境的信息   
+config表示一个javax.servlet.ServletConfig对象。该对象用于存取servlet实例的初始化参数。   
+page表示从该页面产生的一个servlet实例
+
+## 4. Servlet生命周期   
+web容器加载servlet，init()->service()(doGet() or doPost())->destroy()
