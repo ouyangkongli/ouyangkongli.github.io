@@ -36,3 +36,12 @@ page表示从该页面产生的一个servlet实例
 
 ## 4. Servlet生命周期   
 web容器加载servlet，init()->service()(doGet() or doPost())->destroy()
+
+## 5. Java集合类框架的最佳实践有哪些？  
+1. 根据应用的需要正确选择要使用的集合的类型对性能非常重要，比如：假如元素的大小是固定的，而且能事先知道，我们就应该用Array而不是ArrayList。  
+2. 有些集合类允许指定初始容量。因此，如果我们能估计出存储的元素的数目，我们可以设置初始容量来避免重新计算hash值或者是扩容。  
+3. 为了类型安全，可读性和健壮性的原因总是要使用泛型。同时，使用泛型还可以避免运行时的ClassCastException。   
+4. 使用JDK提供的不变类(immutable class)作为Map的键可以避免为我们自己的类实现hashCode()和equals()方法。   
+5. 编程的时候接口优于实现。Array<String> array = new ArrayList<String>();   
+6. 底层的集合实际上是空的情况下，返回长度是0的集合或者是数组，不要返回null。  
+
