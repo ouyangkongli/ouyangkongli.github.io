@@ -42,6 +42,6 @@ web容器加载servlet，init()->service()(doGet() or doPost())->destroy()
 2. 有些集合类允许指定初始容量。因此，如果我们能估计出存储的元素的数目，我们可以设置初始容量来避免重新计算hash值或者是扩容。  
 3. 为了类型安全，可读性和健壮性的原因总是要使用泛型。同时，使用泛型还可以避免运行时的ClassCastException。   
 4. 使用JDK提供的不变类(immutable class)作为Map的键可以避免为我们自己的类实现hashCode()和equals()方法。   
-5. 编程的时候接口优于实现。Array<String> array = new ArrayList<String>();   
+5. 编程的时候接口优于实现。`Array<String> array = new ArrayList<String>();`  
 6. 底层的集合实际上是空的情况下，返回长度是0的集合或者是数组，不要返回null。  
 
