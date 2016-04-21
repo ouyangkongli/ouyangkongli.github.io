@@ -15,3 +15,8 @@ categories: Java
 5. Dispathcher查询一个或多个ViewResolver视图解析器,找到ModelAndView对象指定的视图对象。   
 6. 视图对象负责渲染返回给客户端。  
 
+## 7. Class.getResource(String path)和ClassLoader.getResource(String path)  
+
+> `Class.getResource(path)` 当path以'/'开头时，从ClassPath根目录下获取资源；否则是该类所在的包下获取资源.    
+> `ClassLoader.getResource(path)` 不能以'/'开头，是从ClassPath根目录下获取.  
+
