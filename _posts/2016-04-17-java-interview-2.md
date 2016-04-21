@@ -18,5 +18,7 @@ categories: Java
 ## 7. Class.getResource(String path)和ClassLoader.getResource(String path)  
 
 > `Class.getResource(path)` 当path以'/'开头时，从ClassPath根目录下获取资源；否则是该类所在的包下获取资源.    
-> `ClassLoader.getResource(path)` 不能以'/'开头，是从ClassPath根目录下获取.  
+> `ClassLoader.getResource(path)` path不能以'/'开头，是从ClassPath根目录下获取资源. `this.getClass.getResource("/") == this.getClass.getClassLoader.getResource("")`  
+
+<!-- more -->
 
