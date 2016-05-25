@@ -20,9 +20,8 @@ oracle-xe-11g是Oracle推出的一款免费产品，可惜只有rpm包；
 
 ## 安装docker-oracle-xe-11g
 
-> docker pull wnameless/oracle-xe-11g
->
-> docker run -d -p 49160:22 -p 49161:1521 -e ORACLE_ALLOW_REMOTE=true wnameless/oracle-xe-11g
+    > docker pull wnameless/oracle-xe-11g
+    > docker run -d -p 49160:22 -p 49161:1521 -e ORACLE_ALLOW_REMOTE=true wnameless/oracle-xe-11g
 
 已安装的oracle配置如下：
 
