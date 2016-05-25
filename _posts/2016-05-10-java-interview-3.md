@@ -2,7 +2,7 @@
 layout: post
 title: Java interview 总结三
 description: 总结近期本人面试遇到的典型题目
-tag: [Java, interview]
+tag: [java, interview]
 comments: true
 categories: Java
 ---
