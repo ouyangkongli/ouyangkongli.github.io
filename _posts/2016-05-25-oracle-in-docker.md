@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在Docker上部署Oracle
-description: 总结近期本人面试遇到的典型题目
+description: 在Docker上部署Oracle
 tag: [Docker, oracle]
 comments: true
 categories: Docker
@@ -15,14 +15,28 @@ oracle-xe-11g是Oracle推出的一款免费产品，可惜只有rpm包；
 ## 安装Docker
 * 环境：Ubuntu Xenial 16.04 (LTS)
 
-### 更新apt sources
-> sudo apt-get update
+可参考Docker官方文档：
+[Ubuntu上安装Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/)
 
-> sudo apt-get install apt-transport-https ca-certificates 
+## 安装docker-oracle-xe-11g
 
-> sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+> docker pull wnameless/oracle-xe-11g
+>
+> docker run -d -p 49160:22 -p 49161:1521 -e ORACLE_ALLOW_REMOTE=true wnameless/oracle-xe-11g
 
+已安装的oracle配置如下：
 
+    hostname: localhost
+    port: 49161
+    sid: xe
+    username: system
+    password: oracle
+    
+1. SYS & SYSTEM 密码： oracle
+
+2. SSH登陆： `ssh root@localhost -p 49160`  密码： `admin`
+
+详细文档见：[https://hub.docker.com/r/wnameless/oracle-xe-11g/](https://hub.docker.com/r/wnameless/oracle-xe-11g/)
 
 
 <!-- more -->
