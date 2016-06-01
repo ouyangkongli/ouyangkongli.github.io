@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 在Docker上部署Oracle
-description: 在Docker上部署Oracle
-tag: [Docker, oracle]
+title: Memcached安装与使用
+description: Memcached安装与使用
+tag: [memcached]
 comments: true
-categories: Docker
+categories: memcached
 ---
 
 Memcached是一个自由开源的，高性能，分布式内存对象缓存系统.
@@ -15,9 +15,11 @@ Memcached是一个自由开源的，高性能，分布式内存对象缓存系�
 * 环境：Ubuntu Xenial 16.04 (LTS)
 
 For Debian or Ubuntu:
+
 > sudo apt-get install memcached
 
 For Redhat/Fedora:
+
 > yum install memcached
 
 从源码安装:
