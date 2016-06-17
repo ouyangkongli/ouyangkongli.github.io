@@ -30,9 +30,11 @@ docker上的tnsnames.ora 和sqlnet.ora在目录`/u01/app/oracle/product/11.2.0/x
 **[sqlnet.ora](/resources/sqlnet.ora "sqlnet.ora")**
 
 
+
+
 ### 安装PL/SQL Development
 
-下载安装后，运行-->取消；进入PL/SQL Development 配置，设置Connection.
+下载安装后，运行-->取消；进入PL/SQL Development 配置，设置Connection. 这里`%OracleClient%` 为D:\oracle\instantclient_11_2  .
 
 
 
