@@ -21,16 +21,12 @@ categories: tool
 ### 神器初现
 
 先来看一下这个开源神器，`ngx_http_google_filter_module`, 主要原理是用了nginx的反向代理。
-cuber在github分享了他的代码，[https://github.com/cuber/ngx_http_google_filter_module](https://github.com/cuber/ngx_http_google_filter_module) .
-目前，有很多google镜像网站，都是由该扩展驱动。下面，按照官方教程简单介绍一下搭建的方法。更详细的文档，见 [https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md](https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md).
+cuber在github分享了他的代码，[https://github.com/cuber/ngx_http_google_filter_module](https://github.com/cuber/ngx_http_google_filter_module) .  
+目前，有很多google镜像网站，都是由该扩展驱动。下面，按照官方教程简单介绍一下搭建的方法。  
+更详细的文档，见 [https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md](https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md).
 
 #### 安装 ####
 
-> **以 ubuntu 14.04 为例** 
-
-> *i386, x86_64 均适用*
-
-##### 最简安装 #####
 ```bash
 #
 # 安装 gcc & git
