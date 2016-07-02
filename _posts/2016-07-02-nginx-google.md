@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 自己搭建google镜像 -- nginx
+title: 提升逼格-搭建自己的google镜像by nginx
 description:  使用Nginx Module for Google搭建自己的google镜像
 tag: [google, nginx, tool]
 comments: true
