@@ -7,26 +7,27 @@ comments: true
 categories: tool
 ---
 
-###介绍###
+### 介绍
 
 如果还有人在百度上搜索技术资料，还在忍受着百度的各种无耻行为，还在为在国内不能使用google而烦恼，还在担心VPN可能会随时出卖你，还在抱怨国内的网络环境。
 **Now is your answer！**
 
-###准备###
+### 准备
 
-首先要有一台能访问google.com的vps或云主机，如果你不差花钱的话，推荐一下阿里的[云服务器ECS][https://ecs-buy.aliyun.com/#/prepay]。
+首先要有一台能访问google.com的vps或云主机，如果你不差花钱的话，推荐一下阿里的 [云服务器ECS](https://ecs-buy.aliyun.com/#/prepay)。
 
 <!-- more -->
 
-###神器初现###
+### 神器初现
 
 先来看一下这个开源神器，`ngx_http_google_filter_module`, 主要原理是用了nginx的反向代理。
-cuber在github分享了他的代码，[https://github.com/cuber/ngx_http_google_filter_module][https://github.com/cuber/ngx_http_google_filter_module] .
-目前，有很多google镜像网站，都是由该扩展驱动。下面，按照官方教程简单介绍一下搭建的方法。更详细的文档，见[https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md][https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md].
-
+cuber在github分享了他的代码，[https://github.com/cuber/ngx_http_google_filter_module](https://github.com/cuber/ngx_http_google_filter_module) .
+目前，有很多google镜像网站，都是由该扩展驱动。下面，按照官方教程简单介绍一下搭建的方法。更详细的文档，见 [https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md](https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md).
 
 #### 安装 ####
+
 > **以 ubuntu 14.04 为例** 
+
 > *i386, x86_64 均适用*
 
 ##### 最简安装 #####
@@ -120,7 +121,9 @@ sudo /opt/nginx-1.7.8/sbin/nginx -s reload
 ```
 
 #### 基本配置方法 ####
+
 `http`配置方式
+
 ```nginx
 server {
   server_name <你的域名>;
@@ -136,6 +139,7 @@ server {
 
 ##### 默认语言偏好 #####
 默认的语言偏好可用 `google_language` 来设置, 如果没有设置, 默认使用 `zh-CN` (中文)
+
 ```nginx
 location / {
   google on;
