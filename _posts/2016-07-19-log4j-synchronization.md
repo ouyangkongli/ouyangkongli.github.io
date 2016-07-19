@@ -2,7 +2,7 @@
 layout: post
 title: log4j 多线程同步问题
 description:  log4j 多线程同步问题
-tag: [java, log4j, synchronization ]
+tag: [java, log4j, synchronization]
 comments: true
 categories: java
 ---
@@ -14,7 +14,7 @@ Apache log4j 官方API介绍类[DailyRollingFileAppender](https://logging.apache
 
 ### DailyRollingFileAppender 多线程同步问题
 
-下面来说明一下log4j多线程的多线程同步问题.
+下面来说明一下log4j的多线程同步问题.
 
 <!-- more -->
 
