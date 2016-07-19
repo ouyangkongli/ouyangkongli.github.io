@@ -1,7 +1,7 @@
 ---
 layout: post
-title: log4j 多线程同步问题
-description:  log4j 多线程同步问题
+title: log4j 多进程同步问题
+description:  log4j 多进程同步问题
 tag: [java, log4j, synchronization]
 comments: true
 categories: java
@@ -12,9 +12,9 @@ Apache log4j 官方API介绍类[DailyRollingFileAppender](https://logging.apache
 
 参考文章：[http://hellojavaer.iteye.com/blog/977599](http://hellojavaer.iteye.com/blog/977599)
 
-### DailyRollingFileAppender 多线程同步问题
+### DailyRollingFileAppender 多进程同步问题
 
-下面来说明一下log4j的多线程同步问题.
+下面来说明一下log4j的多进程同步问题.
 
 <!-- more -->
 
@@ -69,19 +69,19 @@ Apache log4j 官方API介绍类[DailyRollingFileAppender](https://logging.apache
 
 该方法意义：在滚动备份时间间隔到的时刻，将前一时间间隔的日志备份，同时以非追加模式将新日志打到新日志文件中；中间部分代码意思是：如果备份文件不存在，则备份，同时创建新日志文件；如果存在，则先删除掉，再备份；
 
-问题出现了，假设A,B线程同时project.log写log，A线程先进行滚动备份：
+问题出现了，假设A,B进程同时project.log写log，A进程先进行滚动备份：
 
-1、 对于A线程：
+1、 对于A进程：
     
     a. 先将project.log备份（renameTo()）为project.log.2016.07.18，然后创建project.log文件，并将日志写在project.log中；
 
-    b. 此时A线程持有project.log的文件句柄；而B线程仍然持有project.log.2016.07.18的文件句柄（尽管被重命名，但句柄不变）；
+    b. 此时A进程持有project.log的文件句柄；而B进程仍然持有project.log.2016.07.18的文件句柄（尽管被重命名，但句柄不变）；
 
-2、 对于B线程：发现以project.log.2016.07.18为文件名的文件已经存在，则将其删除（前一时间段的所有日志全没了），并将以project.log为文件名的文件重命名为project.log.2016.07.18，然后创建project.log文件；
+2、 对于B进程：发现以project.log.2016.07.18为文件名的文件已经存在，则将其删除（前一时间段的所有日志全没了），并将以project.log为文件名的文件重命名为project.log.2016.07.18，然后创建project.log文件；
 
-3、 此时A线程持有project.log.2016.07.18的文件句柄（被B线程重命名过的），而B线程持有最新创建的project.log；
+3、 此时A进程持有project.log.2016.07.18的文件句柄（被B进程重命名过的），而B进程持有最新创建的project.log；
 
-4、结果导致：前一时间段日志丢失，A、B线程在不同的文件里打日志；
+4、结果导致：前一时间段日志丢失，A、B进程在不同的文件里打日志；
 
 
 ### 解决方案
