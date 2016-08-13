@@ -11,6 +11,8 @@ categories: blog
 
 2. 关于正则表达式的介绍，浅显易懂. [正则表达式30分钟入门教程](http://deerchao.net/tutorials/regex/regex.htm). 
 
+3. java native关键字. [Java native 关键字](http://www.cnblogs.com/moon1992/p/5258245.html)  
+
 
 
 
