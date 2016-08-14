@@ -13,6 +13,10 @@ categories: blog
 
 3. java native关键字. [Java native 关键字](http://www.cnblogs.com/moon1992/p/5258245.html)  
 
+4. Java编码问题 [深入分析 Java 中的中文编码问题](https://www.ibm.com/developerworks/cn/java/j-lo-chinesecoding/)
+
+
+
 
 
 
