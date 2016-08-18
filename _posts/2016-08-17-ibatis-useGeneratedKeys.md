@@ -15,6 +15,8 @@ Java程序中有一个对象data，现在需要把data插入数据库中，而�
 
 2. 利用Ibatis中的SelectKey.
 
+<!-- more -->
+
 下面介绍一下SelectKey.
 
 
@@ -27,15 +29,21 @@ Java程序中有一个对象data，现在需要把data插入数据库中，而�
 
 ```sql
 <insert id="insertUser" parameterClass="ibatis.User"> 
-          <selectKey resultClass="long" keyProperty="id"> 
-              select SEQ_USER_ID.nextval as id from dual 
-          </selectKey> 
-           insert into user 
-          (id,name,password) 
-          values 
-          (#id#,#name#,#password#) 
+    <selectKey resultClass="long" keyProperty="id"> 
+        select SEQ_USER_ID.nextval as id from dual 
+    </selectKey> 
+        insert into user(id,name,password) 
+        values (#id#,#name#,#password#) 
 </insert> 
 ```
 
 该句话执行完之后，传进来的参数User对象DO里的id字段就会被赋值成sequence的值。 
 
+当然，如果你insert data之后，不需要data的字段A，那么的sql完全可用这么写：
+
+```sql
+<insert id="insertUser" parameterClass="ibatis.User"> 
+    insert into user(id,name,password) 
+    values(SEQ_USER_ID.nextval,#name#,#password#) 
+</insert> 
+```
