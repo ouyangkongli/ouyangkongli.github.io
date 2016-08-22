@@ -27,6 +27,15 @@ Java程序中有一个对象data，现在需要把data插入数据库中，而�
 |order        |这可以被设置为 BEFORE 或 AFTER。如果设置为 BEFORE,那么它会首先选择主键,设置 keyProperty 然后执行插入语句。如果设置为 AFTER,那么先执行插入语句,然后是 selectKey 元素-这和如 Oracle 数据库相似,可以在插入语句中嵌入序列调用。    |
 
 
+低版本的ibatis中的Selectkey:
+
+1）resultClass：返回的主键的数据类型,跟sqlMap中的数据类型一致； 
+
+2）type：表示主键在insert之前或之后生成(取决于数据库的主键生成策略)，取值分别为[pre|post],非必须，未填写时如果在insert之前表示pre,否则表示post； 
+
+3）keyProperty：返回值保存到的属性，非必须（作用参见Oracle配置）； 
+
+
 ```sql
 <insert id="insertUser" parameterClass="ibatis.User"> 
     <selectKey resultClass="long" keyProperty="id"> 
@@ -37,7 +46,7 @@ Java程序中有一个对象data，现在需要把data插入数据库中，而�
 </insert> 
 ```
 
-该句话执行完之后，传进来的参数User对象DO里的id字段就会被赋值成sequence的值。 
+该句话执行完之后，传进来的参数User对象里的id字段就会被赋值成sequence的值。 
 
 当然，如果你insert data之后，不需要data的字段A，那么的sql完全可用这么写：
 
@@ -47,3 +56,5 @@ Java程序中有一个对象data，现在需要把data插入数据库中，而�
     values(SEQ_USER_ID.nextval,#name#,#password#) 
 </insert> 
 ```
+
+最后，说明一下，不管SelectKey有多好，尽量不要遇到这种情况吧，毕竟很麻烦。
