@@ -15,7 +15,7 @@ categories: blog
 
 4. Java编码问题 [深入分析 Java 中的中文编码问题](https://www.ibm.com/developerworks/cn/java/j-lo-chinesecoding/)
 
-
+5. IBM MQ 教程 [WebSphere MQ 教程](https://www.ibm.com/support/knowledgecenter/zh/SSFKSJ_8.0.0/com.ibm.mq.explorer.doc/bi00112_.htm)
 
 
 
