@@ -14,4 +14,5 @@ categories: blog
 
 3. Oracle sqlldr [关于 Oracle 的数据导入导出及 Sql Loader (sqlldr) 的用法](http://www.cnblogs.com/flish/archive/2010/05/31/1748221.html)
 
+4. Java并发编程：volatile关键字解析 [Java volatile](http://www.cnblogs.com/dolphin0520/p/3920373.html)
 
