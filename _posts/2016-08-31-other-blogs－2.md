@@ -16,3 +16,9 @@ categories: blog
 
 4. Java并发编程：volatile关键字解析 [Java volatile](http://www.cnblogs.com/dolphin0520/p/3920373.html)
 
+5. 再次了解JDBC-从Class.forName 到 DataSource 
+
+ [上](https://benweizhu.github.io/blog/2014/07/06/learning-jdbc-from-class-forname-to-datasource/)     
+ [中](https://benweizhu.github.io/blog/2014/07/07/learning-jdbc-with-jndi/)    
+ [下](https://benweizhu.github.io/blog/2014/07/13/learning-jdbc-transaction/)  
+   
