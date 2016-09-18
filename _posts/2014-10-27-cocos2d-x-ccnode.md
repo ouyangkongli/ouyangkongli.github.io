@@ -14,7 +14,7 @@ tags: [cocos2d-x, CCNode]
 ---
 节点类CCNode可以说是游戏元素的祖宗了，基本上我们看得到的游戏元素都是以它为原型进行扩展的。像CCScene，CCLayer，CCSprite，CCMenu，CCSpriteBatchNode等等都是从CCNode继承而来。另外如果我们要自定义精灵，那么从CCNode继承也是一个很不错的选择。    
 
-###1.概况
+### 1.概况
 
 {:.center}
 ![CCNode](/images/CCNode.jpg)  
@@ -30,7 +30,8 @@ tags: [cocos2d-x, CCNode]
   
 一些子类化的节点提供了更为丰富的特性和功能。  
 <!-- more -->
-###2.属性
+### 2.属性
+
  Features of CCNode:
 {% highlight cpp %}
  - position                                   //位置，默认(0,0)
@@ -46,9 +47,10 @@ tags: [cocos2d-x, CCNode]
  - openGL z position                          //OpenGL z值
 {% endhighlight %}
 
-###3.接口
+### 3.接口
 
-####3.1初始化
+#### 3.1初始化
+
 {% highlight cpp %}
 	//初始化函数，成功返回true
 	virtual bool init();
@@ -58,7 +60,8 @@ tags: [cocos2d-x, CCNode]
 	const char* description(void);
 {% endhighlight %}
 
-####3.2.图形属性
+#### 3.2.图形属性
+
 {% highlight cpp %}
 	//设置/获取Z轴顺序，Z轴大的覆盖Z轴小的
     virtual void setZOrder(int zOrder);
@@ -116,7 +119,8 @@ tags: [cocos2d-x, CCNode]
     virtual float getRotationY();
 {% endhighlight %}
 
-####3.3.节点操作
+#### 3.3.节点操作
+
 {% highlight cpp %}
 	//添加/获取子节点，可以带Z轴顺序（默认为0）和标签
     virtual void addChild(CCNode * child);

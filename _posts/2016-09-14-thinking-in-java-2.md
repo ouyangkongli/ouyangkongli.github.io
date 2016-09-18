@@ -9,7 +9,7 @@ categories: Java
 
 先来看一段代码.
 
-```Java
+```java
 public class CollectionClassifier {
     public static String classify(Set<?> set) {
         return "set";
@@ -29,7 +29,6 @@ public class CollectionClassifier {
                 new ArrayList<String>(),
                 new HashMap<String, String>().values()
         };
-
         for (Collection<?> c : collections) {
             System.out.println(classify(c));
         }
@@ -63,18 +62,18 @@ Unknown Collection
 
 再来看1段代码.
 
-```Java
-    private Confusing(Object o) {
-        System.out.println("Object");
-    }
+```java
+private Confusing(Object o) {
+    System.out.println("Object");
+}
 
-    private Confusing(double[] dArray) {
-        System.out.println("double array");
-    }
+private Confusing(double[] dArray) {
+    System.out.println("double array");
+}
 
-    public static void main(String[] args) {
-        new Confusing(null);
-    }
+public static void main(String[] args) {
+    new Confusing(null);
+}
 ```
 
 当在调用 Confusing(null) 时，null可以作为Object的实参，也可以应用于double[]版本的重载方法，理论上2个方法都是可行的, 但是jvm肯定不可能2个都执行.
