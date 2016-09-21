@@ -62,7 +62,7 @@ iframe {
 blockquote {
 	margin: 1em 0 1em 0;
 	padding: 0.6em 1em;
-	background: #cccccc;
+	background: rgb(236, 236, 236);
 	width: 100%;
 	/*border: 1px solid #0e0e0e;*/
 	border-left-width: 0.4em;
