@@ -13,3 +13,5 @@ categories: blog
 2. java 内部类 [java提高篇(八)----详解内部类](https://www.cnblogs.com/chenssy/p/3388487.html)
 
 3. 线程池 [线程池调整真的很重要](http://www.importnew.com/17633.html)
+
+ [几种线程池的实现算法分析](http://www.infoq.com/cn/articles/thread-pool-algorithm-realization)
