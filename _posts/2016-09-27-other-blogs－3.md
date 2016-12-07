@@ -15,3 +15,5 @@ categories: blog
 3. 线程池 [线程池调整真的很重要](http://www.importnew.com/17633.html)
 
  [几种线程池的实现算法分析](http://www.infoq.com/cn/articles/thread-pool-algorithm-realization)
+
+4. Spring MVC 数据绑定 [SpringMVC强大的数据绑定--Annotation](http://jinnianshilongnian.iteye.com/blog/1705701) 
