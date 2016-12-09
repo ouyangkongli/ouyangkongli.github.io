@@ -17,3 +17,7 @@ categories: blog
  [几种线程池的实现算法分析](http://www.infoq.com/cn/articles/thread-pool-algorithm-realization)
 
 4. Spring MVC 数据绑定 [SpringMVC强大的数据绑定--Annotation](http://jinnianshilongnian.iteye.com/blog/1705701) 
+
+5. session  [Tomcat中的Session小结](https://www.cnblogs.com/chenpi/p/5434537.html)   
+
+[Tomcat中session的管理机制](http://www.linuxidc.com/Linux/2016-09/135072.htm)
