@@ -2,7 +2,7 @@
 layout: post
 title: java 闭包 
 description:  java 闭包
-tag: [closure]
+tag: [java, closure]
 comments: true
 categories: Java
 ---
